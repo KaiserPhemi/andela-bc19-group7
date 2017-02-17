@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+html, body{
+	box-sizing: border-box;
+	font-family: 'Oxygen', sans-serif;
+	height: 100%;
+	
+}
+.main-container{
+	box-shadow: transparent;
+	margin: 0 auto;
+	border-radius: 5px
+	border: 1px solid black;
+}
+
+.dropdown-toggle{
+	margin-bottom: 10px;
+}
+
+.button{
+	border-radius: 5px;
+	color: #fff;
+	height: 35px;
+	font-weight: bold;
+
+}
+
+.title{
+
+}
+
+.notice{
+	margin-bottom: 50px;
+	border-radius: 7px;
+}
+

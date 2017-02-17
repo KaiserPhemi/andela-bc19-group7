@@ -7,17 +7,36 @@
 	  <meta name="viewport" content="width=device-width, initial scale=1">
 	  <title>Andela Notice Board App</title>
 
-	  <link rel= href="">
-		  
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/main.css">
 	</head>
 
 	<body>
-		<div class="container">
-			<div>
-				
-			</div>
-			
+
+		<div class="container main-container">
+			<header>
+				<div class='top title'>
+					<h1>Notice Board</h1>
+				</div>
+			</header>
+	
+			<form action="">
+				<div class="to">
+					<label>To: </label>
+					<select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">>
+						<option>Andela Lagos</option>
+						<option>Lagos Staff</option>
+						<option>People and Culture</option>
+						<option>Success</option>
+						<option>Technology</option>
+					</select>
+				</div>
+				<label>Your Post: </label><br>
+				<textarea name="notice" rows="10" cols="100" class="textarea">
+				</textarea>
+				<br>			
+				<button class="btn right">Submit</button>
+			</form>
 		</div>
-		
 	</body>
 </html>

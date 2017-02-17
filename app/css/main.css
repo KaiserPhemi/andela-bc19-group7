@@ -6,9 +6,11 @@ html, body{
 	height: 100%;
 	
 }
-.container{
+.main-container{
 	box-shadow: transparent;
-	width: 50%;
+	margin: 0 auto;
+	border-radius: 5px
+	border: 1px solid black;
 }
 
 .dropdown-toggle{

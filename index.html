@@ -16,7 +16,7 @@
 	<form>
 		<div class="to">
 			<label>To: </label>
-			<select>
+			<select id="group">
 				<option>Andela Lagos</option>
 				<option>Lagos Staff</option>
 				<option>People and Culture</option>
@@ -26,12 +26,19 @@
 		</div>
 		
 		<div class="text-area">
-			<textarea id="text"></textarea>
+			<textarea id="notice"></textarea>
 		<div>
 		
 		<div class="submit">
 			<input type="submit" value="submit">
 		</div>
+
+	<ol id="noticeList">
+    </ol>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script type="text/javascript" src="app.js"></script>
+
+
 	</form>
 </div>
 </body>

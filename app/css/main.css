@@ -6,31 +6,47 @@ html, body{
 	height: 100%;
 	
 }
+
+label{
+	font-weight: bold;
+}
 .main-container{
-	box-shadow: transparent;
-	margin: 0 auto;
 	border-radius: 5px
 	border: 1px solid black;
+	margin: auto;
+	margin-top: 5%;
+	background-color: rgba(120,90,200,0.1);
+	padding: 20px;
+	border-radius: 7px;
+}
+
+.logo{
+	width: 60px;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 10px;
+}
+
+.my-button{
+	background-color: rgb(106,90,205);
+	color:rgb(255,255,255);
+
 }
 
 .dropdown-toggle{
 	margin-bottom: 10px;
 }
 
-.button{
-	border-radius: 5px;
-	color: #fff;
-	height: 35px;
+.top-title{
 	font-weight: bold;
 
 }
 
-.title{
-
-}
-
-.notice{
-	margin-bottom: 50px;
+.textarea{
+	margin-bottom: 20px;
 	border-radius: 7px;
+	width: 100%;
+	box-sizing: border-box;
+
 }
 

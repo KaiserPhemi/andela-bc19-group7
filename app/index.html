@@ -9,33 +9,53 @@
 
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="css/main.css">
+
+	  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
 	</head>
 
 	<body>
+		
+		<!--Navigation Bar-->
+		<nav class="navbar navbar-default">
+					
+		</nav>
 
+		<!--Main page containing notice board-->
 		<div class="container main-container">
+			
+			<!--Header containin logo and title-->
 			<header>
-				<div class='top title'>
-					<h1>Notice Board</h1>
+				<div>
+					<a href="index.html"><img src="img/andela-logo.jpg" class="brand brand-name navbar-right img-responsive logo"></a>
 				</div>
-			</header>
-	
-			<form action="">
-				<div class="to">
+
+				<div class='top-title'>
+					<h1 class="center top-title">Andela Notice Board</h1>
+				</div>
+			</header><br>
+				<!--Form area-->
+			<form class="form-group main-form" onsubmit="saveToList(); return false;">
+				
+				<div class="recipient">
 					<label>To: </label>
-					<select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">>
-						<option>Andela Lagos</option>
-						<option>Lagos Staff</option>
-						<option>People and Culture</option>
-						<option>Success</option>
-						<option>Technology</option>
+					<select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<option value="andela-lagos">Andela Lagos</option>
+						<option value="lagos-staff">Lagos Staff</option>
+						<option value="lagos-fellows">Lagos Fellows</option>
+						<option value="people">People and Culture</option>
+						<option value= "success">Success</option>
+						<option value="technology">Technology</option>
 					</select>
 				</div>
+				<br>
+				<label for="title">Title: </label><br>
+				<input type="text" name="noticeTitle" class="form-control" cols="150">
+				<br>
 				<label>Your Post: </label><br>
-				<textarea name="notice" rows="10" cols="100" class="textarea">
+				<textarea name="notice" rows="10" cols="183" class="textarea form-control" maxlength="500">
 				</textarea>
-				<br>			
-				<button class="btn right">Submit</button>
+				
+				<button class="btn my-button">Post Notice</button>
 			</form>
 		</div>
 	</body>

@@ -9,8 +9,6 @@
 
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="css/main.css">
-
-	  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
 	</head>
 
 	<body>
@@ -34,11 +32,11 @@
 				</div>
 			</header><br>
 				<!--Form area-->
-			<form class="form-group main-form" onsubmit="saveToList(); return false;">
+			<form class="form-group main-form" action="views/view-post.html" onsubmit="generateTable();">
 				
 				<div class="recipient">
 					<label>To: </label>
-					<select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<select class="btn btn-secondary dropdown-toggle recipent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<option value="andela-lagos">Andela Lagos</option>
 						<option value="lagos-staff">Lagos Staff</option>
 						<option value="lagos-fellows">Lagos Fellows</option>
@@ -49,17 +47,17 @@
 				</div>
 				<br>
 				<label for="title">Title: </label><br>
-				<input type="text" name="noticeTitle" class="form-control" cols="150">
+				<input type="text" name="noticeTitle" class="form-control notice-title" cols="150">
 				<br>
 				<label>Your Post: </label><br>
-				<textarea name="notice" rows="10" cols="183" class="textarea form-control" maxlength="500">
+				<textarea name="content" rows="10" cols="183" class="textarea form-control message-body" maxlength="500">
 				</textarea>
 				
 				<button class="btn my-button">Post Notice</button>
 			</form>
 		</div>
-		<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-    
-    	<script type="text/javascript" src="../js/app.js"></script>
+		<script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+      	<script src="../js/app.js"></script>
+      	<script src="js/arrGen.js"></script>
 	</body>
 </html>

@@ -26,5 +26,6 @@
 			}
 			 count++;
 		}
+		return table;
 	};
 })();

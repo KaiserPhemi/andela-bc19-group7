@@ -4,7 +4,6 @@ var favMovies = new Firebase('https://moviefire.firebaseio.com/movies');
  
 function saveToList(event) {
     if (event.which == 13 || event.keyCode == 13) { // as the user presses the enter key, we will attempt to save the data
-<<<<<<< HEAD
         var notice = document.getByClassName('notice').value.trim();
         var group = document.getElementById('dropdownMenuButton').value.trim();
         if (notice.length > 0 && group.length > 0 ) {
@@ -14,13 +13,12 @@ function saveToList(event) {
         }
         document.getElementByClassName('notice').value = '';
         document.getElementById('dropdownMenuButton').value = '';
-=======
         var movieName = document.getElementById('movieName').value.trim();
         if (movieName.length > 0) {
             saveToFB(movieName);
         }
         document.getElementById('movieName').value = '';
->>>>>>> e3b95e2854f609cbe5bebfa2aaa7ab5a908033e9
+
         return false;
     }
 };
